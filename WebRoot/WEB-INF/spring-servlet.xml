@@ -17,7 +17,7 @@
 	<mvc:annotation-driven />
 	<mvc:default-servlet-handler />
 	<!-- 组件扫描 -->
-	<context:component-scan base-package="*"></context:component-scan>
+	<context:component-scan base-package=".*"></context:component-scan>
 
 	
 
@@ -40,7 +40,7 @@
 	<!-- sessionFactory配置 -->
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
-		<property name="mapperLocations" value="classpath:mapper/*.xml"></property>
+		<property name="mapperLocations" value="classpath:mapperXml/*.xml"></property>
 		<property name="typeAliasesPackage" value="bean" />
 	</bean>
 

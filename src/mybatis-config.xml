@@ -7,6 +7,5 @@
 	</typeAliases>
 	<mappers>
 		<mapper class="mapper.MenuMapper" />
-		
 	</mappers>
 </configuration>

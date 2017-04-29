@@ -11,4 +11,7 @@
     <result column="link" jdbcType="VARCHAR" property="link" />
     <result column="icon_skin" jdbcType="VARCHAR" property="iconSkin" />
   </resultMap>
-</mapper>
+  <select id="getMenu" resultMap="BaseResultMap">
+    select * from menu;
+  </select>
+</mapper> 
